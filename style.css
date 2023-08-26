@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+     /* outline: red dashed 1px  ;   */
+  
+  }
+
+  body{
+    background-color: #222;
+    color: #fff;
+  }
+  
+  .continer{
+  
+    width: 85vw;
+    margin: auto;
+  
+  }
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20PX;
+}
+
+input{
+    padding: 8px;
+    width: 100%;
+    height: 30px;
+    margin-block: 4PX;
+    background-color: #111;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+}
+
+input:focus{
+    background-color: #000;
+    transform: scale(1.1);
+} 
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+#total{
+    background-color: red;
+    padding: 4px 2PX;
+    border-radius: 4px;
+}
+
+#total::before{
+    content: 'TOTAL: ';
+}
+
+
+.inputs-continer{
+    margin-block: 20PX;
+}
+
+
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20PX;
+    color: #fff;
+    background-color: rgb(82, 12, 148);
+    transition-duration: 0.5s;
+}
+
+button:hover{
+    background-color: rgb(122, 47, 193);
+    letter-spacing: 1px;
+}
+
+#title-categ{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15PX;
+}
+
+#title-categ button {
+    width: 45%;
+}
+
+table  {
+    margin-top: 20PX;
+    width: 100%;
+    text-align: center;
+}
+
+th , td {
+    padding: 5px;
+}
+
+
+

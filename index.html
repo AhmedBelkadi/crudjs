@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUD</title>
+</head>
+<body>
+    
+    <div class="continer" >
+        
+        <header class="header" >
+            <h1>CRUDS</h1>
+            <p>PRODUCTS MANAGEMENT SYSTEM</p>
+        </header>
+    
+        <div class="inputs-continer">
+
+            <input type="text" placeholder="title" id="title" >
+            <div class="prices"  >
+    
+                <input onkeyup="getTotal()" type="number" placeholder="price" id="price" >
+                <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes" >
+                <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads" >
+                <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount" >
+                <SMAll id="total" ></SMAll>
+    
+            </div>     
+            <input type="number" placeholder="count" id="count" >
+            <input  type="text" placeholder="category" id="category" >
+            <button  id="create" >CREATE</button> 
+        </div>
+
+        <div class="outputs-continer">
+            
+            <div class="searchBlock">
+
+                <input onkeyup="searchBy(this.value.toLowerCase())" type="text" placeholder="search" id="searchInput">
+                <div id="title-categ" >
+                        <button  onclick="searchMode(this.id)" id="searchByTitle">SEARCH BY TITLE</button>
+                        <button  onclick="searchMode(this.id)" id="searchByCategory">SEARCH BY CATEGORY</button>    
+                        <!-- onkeyup="searchBy()" onkeyup="searchBy()" -->
+                </div>
+                <div id="deleteAll" > 
+                </div>
+
+            </div>
+            
+            <table>
+    
+                <tr>
+                    <th>ID</th>
+                    <th>TITLE</th>
+                    <th>PRICE</th>
+                    <th>TAXES</th>
+                    <th>ADS</th>
+                    <th>DISCOUNT</th>
+                    <th>TOTAL</th>
+                    <th>CATEGORY</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+    
+                <tbody id="data-container">
+        
+                </tbody>
+
+            </table>
+
+
+
+        </div>
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
